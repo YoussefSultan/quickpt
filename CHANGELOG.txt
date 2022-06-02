@@ -10,3 +10,5 @@ Change Log
 - testing until working
 0.0.5 (06/02/22)
 - Set encoder default to False
+0.0.6 (06/02/22)
+- added width and height parameters for graph visualization

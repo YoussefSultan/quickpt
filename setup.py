@@ -9,7 +9,7 @@ classifiers = [
 
 setup(
   name='quickpt',
-  version='0.0.5',
+  version='0.0.6',
   author='Youssef Sultan',
   author_email='youssefsultann@gmail.com',
   description='For aggregating and visualizing variance, unique values and percent of missing values of features in any dataset.',
