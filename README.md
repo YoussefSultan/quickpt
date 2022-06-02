@@ -9,7 +9,7 @@ from quickpt.quickpt import quickpt
 quickpt(df, graph=None, encode=True)
 ```
 ### More information on the project
-* [PyPi](https://pypi.org/project/quickpt/)
+* [GitHub](https://github.com/YoussefSultan/quickpt)
 <!-- CONTRIBUTING -->
 ## Contributing
 

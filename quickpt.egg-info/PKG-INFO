@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: quickpt
-Version: 0.0.4
+Version: 0.0.5
 Summary: For aggregating and visualizing variance, unique values and percent of missing values of features in any dataset.
 Home-page: https://github.com/youssefsultan/quickpt
 Author: Youssef Sultan
@@ -17,7 +17,7 @@ Description:
         quickpt(df, graph=None, encode=True)
         ```
         ### More information on the project
-        * [PyPi](https://pypi.org/project/quickpt/)
+        * [GitHub](https://github.com/YoussefSultan/quickpt)
         <!-- CONTRIBUTING -->
         ## Contributing
         
@@ -40,6 +40,8 @@ Description:
         - testing until working
         0.0.4 (06/02/22)
         - testing until working
+        0.0.5 (06/02/22)
+        - Set encoder default to False
 Keywords: visualize
 Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 3

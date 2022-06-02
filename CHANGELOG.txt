@@ -8,3 +8,5 @@ Change Log
 - testing until working
 0.0.4 (06/02/22)
 - testing until working
+0.0.5 (06/02/22)
+- Set encoder default to False

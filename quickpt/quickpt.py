@@ -3,7 +3,7 @@ import plotly.express as px
 import pandas as pd
 import numpy as np
 
-def quickpt(df, graph=None, encoder=True):
+def quickpt(df, graph=None, encoder=False):
     
     """
     quickpt
