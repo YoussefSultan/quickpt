@@ -6,7 +6,7 @@ This is a small Python Function that allows you to see the variance, percentage 
 `pip install quickpt`
 ```python
 from quickpt.quickpt import quickpt
-quickpt(df, graph=None, encode=True)
+quickpt(df, graph=None, encode=True, width=800, height=400)
 ```
 ### More information on the project
 * [GitHub](https://github.com/YoussefSultan/quickpt)
