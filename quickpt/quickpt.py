@@ -3,7 +3,7 @@ import plotly.express as px
 import pandas as pd
 import numpy as np
 
-def quickpt(df, graph=None, encoder=False):
+def quickpt(df, graph=None, encoder=False, width=800, height=400):
     
     """
     quickpt
@@ -20,6 +20,12 @@ def quickpt(df, graph=None, encoder=False):
     encode : True, False
         (default is True)
     
+    width : int
+        (default is 800)
+
+    height : int
+        (default is 400)
+    
     Description of Parameters
     -------
         - var = variance
@@ -27,6 +33,8 @@ def quickpt(df, graph=None, encoder=False):
         - uniq = sum of unique values
         - encode --> True = Uses LabelEncoder to encode categorical variables and receive summary statistics
         - encode --> False = Only shows DataFrame/Visualization of original numeric variables of input data
+        - width = update graph width
+        - height = update graph height
 
     Use
     ----
@@ -90,17 +98,17 @@ def quickpt(df, graph=None, encoder=False):
     # graph parameters for visualization    
     if graph == 'var':
         df = missing_value_df
-        fig = px.bar(df.sort_values('Variance', ascending=False), x='Features', y='Variance')
+        fig = px.bar(df.sort_values('Variance', ascending=False), x='Features', y='Variance', width=width, height=height)
         fig.update_xaxes(tickangle=40, tickfont_size=8)
         fig.show()
     if graph == 'null':
         df = missing_value_df
-        fig = px.bar(df.sort_values('percent_missing', ascending=False), x='Features', y='percent_missing')
+        fig = px.bar(df.sort_values('percent_missing', ascending=False), x='Features', y='percent_missing', width=width, height=height)
         fig.update_xaxes(tickangle=40, tickfont_size=8)
         fig.show()
     if graph == 'uniq':
         df = missing_value_df
-        fig = px.bar(df.sort_values('unique_values', ascending=False), x='Features', y='unique_values')
+        fig = px.bar(df.sort_values('unique_values', ascending=False), x='Features', y='unique_values', width=width, height=height)
         fig.update_xaxes(tickangle=40, tickfont_size=8)
         fig.show()
 
