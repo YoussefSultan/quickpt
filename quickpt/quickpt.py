@@ -56,7 +56,7 @@ def quickpt(df, graph=None, encoder=False, width=800, height=400):
         unique_values = temp_df.nunique()                                  # aggregate all unique values
         dtype = df.dtypes                                                  # grab datatypes of df
         original_feature_count = len(temp_df.columns)                      # grab original sum of features
-        variance = dict(np.sqrt(temp_df.describe().iloc[2,:]))             # aggregate variance per feature
+        variance = dict(temp_df.var())                                     # aggregate variance per feature
         missing_value_df = pd.DataFrame({'Features': temp_df.columns,      #  #  #  #  #  #  #
                                         'percent_missing': percent_missing,# Create DataFrame of Summary Statistics
                                         'unique_values': unique_values,
@@ -88,7 +88,7 @@ def quickpt(df, graph=None, encoder=False, width=800, height=400):
         percent_missing = temp_df.isnull().sum() * 100 / len(df)
         unique_values = temp_df.nunique()
         dtype = temp_df.dtypes
-        variance = dict(np.sqrt(temp_df.describe().iloc[2,:]))
+        variance = dict(temp_df.var())
         missing_value_df = pd.DataFrame({'Features': temp_df.columns,
                                         'percent_missing': percent_missing,
                                         'unique_values': unique_values,
